@@ -37,7 +37,7 @@ class BookDetailVC: UIViewController {
         imageView.image = book.image
         bookNameLbl.text = book.name
         ratingLbl.text = book.rating
-        bookPriceLbl.text = book.price.description + " BYN"
+        bookPriceLbl.text = book.price.description + " $"
         showReviewBtn.setTitle("Посмотреть (\(book.feedBacks.count)) отзывов", for: .normal)
         showReviewBtn.isEnabled = book.feedBacks.count != 0
     }

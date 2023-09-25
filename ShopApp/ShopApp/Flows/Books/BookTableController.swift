@@ -23,9 +23,9 @@ class BookTableController: UITableViewController {
         
         CellManager.configure(cell, with: book)
 
-//        cell.textLabel?.text = book.name
-//        cell.detailTextLabel?.text = String(book.price) + " BYN\n" + meal.rating
-//        cell.imageView?.image = book.image
+        cell.textLabel?.text = book.name
+        cell.detailTextLabel?.text = String(book.price) + " $\n" + book.rating
+        cell.imageView?.image = book.image
 
         return cell
     }
