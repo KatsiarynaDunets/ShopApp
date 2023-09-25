@@ -9,7 +9,7 @@ import UIKit
 
 class BookTableController: UITableViewController {
 
-    var meals: [Book] {
+    var books: [Book] {
         BooksData.shared.books
     }
 
@@ -19,7 +19,7 @@ class BookTableController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let meal = meals[indexPath.row]
+        let book = books[indexPath.row]
         
         CellManager.configure(cell, with: book)
 

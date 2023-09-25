@@ -11,17 +11,16 @@ class BookDetailVC: UIViewController {
 
     var index: Int!
     
-    var meal: Book {
+    var book: Book {
         BooksData.shared.books[index]
     }
     
     @IBOutlet weak var booksStackView: UIStackView!
-    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var bookNameLbl: UILabel!
     @IBOutlet weak var bookPriceLbl: UILabel!
     @IBOutlet weak var ratingLbl: UILabel!
     @IBOutlet weak var showReviewBtn: UIButton!
-    
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI(with: view.bounds.size)
@@ -33,7 +32,7 @@ class BookDetailVC: UIViewController {
     
     private func updateUI(with size: CGSize) {
         let isVertival = size.width < size.height
-        bookStackView.axis = isVertival ? .vertical : .horizontal
+        booksStackView.axis = isVertival ? .vertical : .horizontal
         title = book.name
         imageView.image = book.image
         bookNameLbl.text = book.name
