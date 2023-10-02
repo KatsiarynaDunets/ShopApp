@@ -114,7 +114,7 @@ Rating</string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray" title="Посмотреть (0) отзывов"/>
                                                         <connections>
-                                                            <segue destination="y2W-GE-Lau" kind="show" id="wcC-fG-m6j"/>
+                                                            <segue destination="y2W-GE-Lau" kind="show" id="RyU-34-iAq"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfy-oL-HVK">
@@ -123,7 +123,7 @@ Rating</string>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Оставить отзыв и рейтинг"/>
                                                         <connections>
-                                                            <segue destination="l4q-w8-Vzu" kind="show" id="ncu-YN-vLy"/>
+                                                            <segue destination="l4q-w8-Vzu" kind="show" id="jmc-7g-rqi"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -148,7 +148,7 @@ Rating</string>
                         <outlet property="booksStackView" destination="IOq-Vd-oXb" id="xBV-S2-Qnw"/>
                         <outlet property="imageView" destination="vbH-Wc-54N" id="dBV-FG-oQq"/>
                         <outlet property="ratingLbl" destination="OTR-ZS-gwx" id="GUH-Wi-cPX"/>
-                        <outlet property="showReviewBtn" destination="005-Px-COT" id="CRC-B4-kY5"/>
+                        <outlet property="showReviewBtn" destination="005-Px-COT" id="LLh-JW-a43"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZt-Eh-J5Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -201,7 +201,7 @@ Rating</string>
                                                     <segment title="⭐⭐"/>
                                                     <segment title="⭐⭐⭐"/>
                                                     <segment title="⭐(4)"/>
-                                                    <segment title="⭐(4)"/>
+                                                    <segment title="⭐(5)"/>
                                                 </segments>
                                             </segmentedControl>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrr-mR-aZy">
@@ -264,10 +264,11 @@ Rating</string>
             </objects>
             <point key="canvasLocation" x="1800" y="-36"/>
         </scene>
-        <!--Table View Controller-->
+        <!--ReviewsTVC-->
         <scene sceneID="zs2-kB-LE7">
             <objects>
-                <tableViewController id="y2W-GE-Lau" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vyc-Ki-2SW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tableViewController id="y2W-GE-Lau" customClass="ReviewsTVC" customModule="ShopApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dAz-lf-s5d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -289,9 +290,8 @@ Rating</string>
                     </tableView>
                     <navigationItem key="navigationItem" id="tEi-5r-PoJ"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vyc-Ki-2SW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4132" y="-356"/>
+            <point key="canvasLocation" x="4131" y="-404"/>
         </scene>
     </scenes>
     <resources>

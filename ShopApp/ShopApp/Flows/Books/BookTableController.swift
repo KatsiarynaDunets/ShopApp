@@ -26,7 +26,6 @@ class BookTableController: UITableViewController {
         cell.textLabel?.text = book.name
         cell.detailTextLabel?.text = String(book.price) + " $\n" + book.rating
         cell.imageView?.image = book.image
-
         return cell
     }
 

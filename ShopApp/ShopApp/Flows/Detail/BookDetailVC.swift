@@ -10,7 +10,6 @@ import UIKit
 class BookDetailVC: UIViewController {
 
     var index: Int!
-    
     var book: Book {
         BooksData.shared.books[index]
     }
@@ -43,9 +42,8 @@ class BookDetailVC: UIViewController {
     }
 
     // MARK: - Navigation
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
     }
-
 }

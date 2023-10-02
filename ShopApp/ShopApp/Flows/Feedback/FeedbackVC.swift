@@ -34,7 +34,7 @@ class FeedbackVC: UIViewController {
            var reviews = UserDefaults.standard.array(forKey: "reviews") as? [[String: Any]] ?? []
            let newReview = ["text": text, "rating": rating] as [String : Any]
            reviews.append(newReview)
-           UserDefaults.standard.set(reviews, forKey: "reviews")
+           UserDefaults.standard.set(reviews, forKey: "reviews_\(String(describing: index))")
        }
        
        func calculateAverageRating() {
@@ -47,25 +47,14 @@ class FeedbackVC: UIViewController {
            // Сохранить или использовать средний рейтинг
            print("Рейтинг книги: \(averageRating)")
        }
-   }
     
-//    struct Feedback {
+    
+}
+
+      // MARK: - Navigation
 //
-//        private let date = Date()
+//func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//   guard let indexPath = tableView.indexPathForSelectedRow,
+//    let bookDetailVC = segue.destination as? BookDetailVCelse { return }
+//    bookDetailVC.index = indexPath.row }
 //
-//        let text: String
-//        let mark: Double
-//
-//    }
-//    var feedback: [Feedback] {
-//        FeedbackData.shared.books
-//    }
-//}
-//
-//
-//        // MARK: - Navigation
-//
-//        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//            guard let indexPath = tableView.indexPathForSelectedRow,
-//            let bookDetailVC = segue.destination as? BookDetailVC else { return }
-//            bookDetailVC.index = indexPath.row

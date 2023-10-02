@@ -9,6 +9,8 @@ import UIKit
 
 class ReviewTableViewCell: UITableViewCell {
 
+//    var feedBacks: [Review]
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
