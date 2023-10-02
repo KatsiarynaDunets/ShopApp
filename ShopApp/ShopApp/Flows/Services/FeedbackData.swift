@@ -8,7 +8,6 @@
 import Foundation
 
 class FeedbackData {
-
     var feedback: [Feedback]
 
     private init() {

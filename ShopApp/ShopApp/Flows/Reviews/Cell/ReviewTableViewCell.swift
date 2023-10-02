@@ -8,9 +8,8 @@
 import UIKit
 
 class ReviewTableViewCell: UITableViewCell {
-
 //    var feedBacks: [Review]
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,5 +20,4 @@ class ReviewTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }

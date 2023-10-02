@@ -8,27 +8,26 @@
 import UIKit
 
 class BookDetailVC: UIViewController {
-
     var index: Int!
     var book: Book {
         BooksData.shared.books[index]
     }
-    
-    @IBOutlet weak var booksStackView: UIStackView!
-    @IBOutlet weak var bookNameLbl: UILabel!
-    @IBOutlet weak var bookPriceLbl: UILabel!
-    @IBOutlet weak var ratingLbl: UILabel!
-    @IBOutlet weak var showReviewBtn: UIButton!
-    @IBOutlet weak var imageView: UIImageView!
+
+    @IBOutlet var booksStackView: UIStackView!
+    @IBOutlet var bookNameLbl: UILabel!
+    @IBOutlet var bookPriceLbl: UILabel!
+    @IBOutlet var ratingLbl: UILabel!
+    @IBOutlet var showReviewBtn: UIButton!
+    @IBOutlet var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI(with: view.bounds.size)
     }
-    
+
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         updateUI(with: size)
     }
-    
+
     private func updateUI(with size: CGSize) {
         let isVertival = size.width < size.height
         booksStackView.axis = isVertival ? .vertical : .horizontal
@@ -42,8 +41,6 @@ class BookDetailVC: UIViewController {
     }
 
     // MARK: - Navigation
-        
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {}
 }

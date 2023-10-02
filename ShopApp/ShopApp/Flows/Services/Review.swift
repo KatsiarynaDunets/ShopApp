@@ -7,8 +7,6 @@
 
 import UIKit
 struct Review {
-    
     let text: String
     let rating: Int
 }
-
